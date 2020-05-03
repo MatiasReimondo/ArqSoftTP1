@@ -14,5 +14,12 @@ def timeout():
   time.sleep(TIMEOUT)
   return "python - timeout"
 
+@app.route("/heavy")
+def heavy():
+  t_end = time.time() + TIMEOUT
+  while time.time() < t_end:
+    pass
+  return "python - heavy"
+
 if (__name__ == "__main__"):
   app.run()
