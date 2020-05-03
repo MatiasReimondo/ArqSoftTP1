@@ -17,3 +17,5 @@
 1. Correr el script de artiller. En `perf`, correr `npm install` y luego `./run-scenario.sh root node`. Luego de un minuto deberían aparecer resultados en el dashboard:
 
 ![dashboard](./images/dashboard.png)
+
+1. Para correr las pruebas en el servidor de python `./run-scenario.sh root gunicorn`. Seleccionar server: `artillery-gunicorn` y container: `1c20-tp-1-nginx_1` para ver datos del server
