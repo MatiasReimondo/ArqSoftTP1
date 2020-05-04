@@ -19,29 +19,31 @@ config:
 
   phases:
     - name: Ramp
-      duration: 30
-      arrivalRate: 100
-      rampTo: 300
+      duration: 60
+      arrivalRate: 1
+      rampTo: 5
     - name: Plain
-      duration: 30
-      arrivalRate: 300
+      duration: 60
+      arrivalRate: 5
     - name: Ramp 2
-      duration: 30
-      arrivalRate: 300
-      rampTo: 400
+      duration: 60
+      arrivalRate: 5
+      rampTo: 10
     - name: Plain 2
       duration: 60
-      arrivalRate: 400
+      arrivalRate: 10
     - name: Ramp 3
-      duration: 30
-      arrivalRate: 400
-      rampTo: 450
+      duration: 60
+      arrivalRate: 10
+      rampTo: 15
     - name: Plain 3
-      duration: 120
-      arrivalRate: 450
+      duration: 60
+      arrivalRate: 15
+
+
 
 scenarios:
-  - name: Root (/)
+  - name: Heavy (/heavy)
     flow:
       - get:
-          url: '/'
+          url: '/heavy'
