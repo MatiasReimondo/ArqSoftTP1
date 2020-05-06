@@ -3,6 +3,7 @@ import time
 from flask import Flask
 
 TIMEOUT = 5
+LOOP = 0.5
 app = Flask(__name__)
 
 @app.route("/")
@@ -16,7 +17,7 @@ def timeout():
 
 @app.route("/heavy")
 def heavy():
-  t_end = time.time() + TIMEOUT
+  t_end = time.time() + LOOP
   while time.time() < t_end:
     pass
   return "python - heavy"
