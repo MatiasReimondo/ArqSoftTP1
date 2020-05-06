@@ -2,6 +2,7 @@ const express = require('express');
 
 const PORT = 3000;
 const TIMEOUT = 5*1000;
+const LOOP = 500;
 const app = express();
 
 app.get('/', (req, res) => {
@@ -20,7 +21,7 @@ app.get('/heavy', (req, res) => {
   for (;;) {
     let now = new Date();
 
-    if (now - start >= TIMEOUT) {
+    if (now - start >= LOOP) {
       break;
     }
   }

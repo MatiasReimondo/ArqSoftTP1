@@ -17,19 +17,26 @@ config:
 
   pool: 50 # All HTTP requests from all virtual users will be sent over the same connections
 
-  #Se asume 0.5 de LOOP
-  #El endpoint deberia aguantarse esta demanda
+#Se supone endpoint heavy con 0.5 de LOOP
+#Deberia producir request pendientes y timeouts
   phases:
     - name: Plain0
-      duration: 120
+      duration: 60
       arrivalRate: 1
-    - name: Ramp
+    - name: Ramp0
       duration: 60
       arrivalRate: 1
       rampTo: 2
-    - name: Plain
-      duration: 120
+    - name: Plain1
+      duration: 60
       arrivalRate: 2
+    - name: Ramp1
+      duration: 60
+      arrivalRate: 2
+      rampTo: 4
+    - name: Plain2
+      duration: 60
+      arrivalRate: 4
 
 
 
