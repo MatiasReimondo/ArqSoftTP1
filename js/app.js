@@ -1,8 +1,8 @@
 const express = require('express');
 
 const PORT = 3000;
-const TIMEOUT = 5*1000;
 const LOOP = 500;
+const TIMEOUT = 5000;
 const app = express();
 
 app.get('/', (req, res) => {
@@ -29,6 +29,6 @@ app.get('/heavy', (req, res) => {
   res.status(200).send('node - heavy');
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", 1024, () => {
   console.log('Escuchando en el puerto', PORT);
 });
