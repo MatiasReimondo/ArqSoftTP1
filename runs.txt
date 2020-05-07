@@ -1,0 +1,115 @@
+---Python heavy 1
+All virtual users finished
+Summary report @ 20:02:17(-0300) 2020-05-06
+  Scenarios launched:  454
+  Scenarios completed: 454
+  Requests completed:  454
+  Mean response/sec: 1.51
+  Response time (msec):
+    min: 501.8
+    max: 537.4
+    median: 512.5
+    p95: 527.7
+    p99: 531.8
+  Scenario counts:
+    Heavy (/heavy): 454 (100%)
+  Codes:
+    200: 454
+
+-- Python heavy 2
+All virtual users finished
+Summary report @ 20:48:16(-0300) 2020-05-06
+  Scenarios launched:  692
+  Scenarios completed: 692
+  Requests completed:  692
+  Mean response/sec: 1.92
+  Response time (msec):
+    min: 501.8
+    max: 60009.2
+    median: 8706.2
+    p95: 60002.1
+    p99: 60005
+  Scenario counts:
+    Heavy (/heavy): 692 (100%)
+  Codes:
+    200: 560
+    504: 132
+
+-- Python heavy 3
+All virtual users finished
+Summary report @ 20:59:51(-0300) 2020-05-06
+  Scenarios launched:  1406
+  Scenarios completed: 1406
+  Requests completed:  1406
+  Mean response/sec: 3.9
+  Response time (msec):
+    min: 501.9
+    max: 60027.4
+    median: 60000.3
+    p95: 60005.2
+    p99: 60007.6
+  Scenario counts:
+    Heavy (/heavy): 1406 (100%)
+  Codes:
+    200: 410
+    504: 996
+
+
+
+------ Node heavy
+All virtual users finished
+Summary report @ 20:33:12(-0300) 2020-05-06
+  Scenarios launched:  452
+  Scenarios completed: 452
+  Requests completed:  452
+  Mean response/sec: 1.5
+  Response time (msec):
+    min: 500.3
+    max: 524.5
+    median: 503.2
+    p95: 511.4
+    p99: 513.2
+  Scenario counts:
+    Heavy (/heavy): 452 (100%)
+  Codes:
+    200: 452
+
+---- Node heavy2
+All virtual users finished
+Summary report @ 20:10:29(-0300) 2020-05-06
+  Scenarios launched:  697
+  Scenarios completed: 697
+  Requests completed:  697
+  Mean response/sec: 1.82
+  Response time (msec):
+    min: 500.6
+    max: 91500.5
+    median: 6258.9
+    p95: 75275.8
+    p99: 83963
+  Scenario counts:
+    Heavy (/heavy): 697 (100%)
+  Codes:
+    200: 568
+    504: 129
+
+---------- Node heavy3
+All virtual users finished
+Summary report @ 20:25:58(-0300) 2020-05-06
+  Scenarios launched:  1384
+  Scenarios completed: 1326
+  Requests completed:  1326
+  Mean response/sec: 3.84
+  Response time (msec):
+    min: 501.1
+    max: 91624.5
+    median: 60000.6
+    p95: 75463.3
+    p99: 91582.4
+  Scenario counts:
+    Heavy (/heavy): 1384 (100%)
+  Codes:
+    200: 418
+    504: 908
+  Errors:
+    ECONNRESET: 58
