@@ -113,3 +113,101 @@ Summary report @ 20:25:58(-0300) 2020-05-06
     504: 908
   Errors:
     ECONNRESET: 58
+
+
+-------- python W HEAVY 1
+
+All virtual users finished
+Summary report @ 17:05:02(-0300) 2020-05-07
+  Scenarios launched:  453
+  Scenarios completed: 453
+  Requests completed:  453
+  Mean response/sec: 1.51
+  Response time (msec):
+    min: 501.7
+    max: 524.7
+    median: 502.2
+    p95: 506.3
+    p99: 512.9
+  Scenario counts:
+    Heavy (/heavy): 453 (100%)
+  Codes:
+    200: 453
+
+
+--- python 4w HEAVY 2
+
+All virtual users finished
+Summary report @ 17:10:55(-0300) 2020-05-07
+  Scenarios launched:  699
+  Scenarios completed: 699
+  Requests completed:  699
+  Mean response/sec: 2.32
+  Response time (msec):
+    min: 501.7
+    max: 521.9
+    median: 502.2
+    p95: 506.4
+    p99: 509.3
+  Scenario counts:
+    Heavy (/heavy): 699 (100%)
+  Codes:
+    200: 699
+
+
+--- python 4w HEAVY 3
+
+All virtual users finished
+Summary report @ 17:18:36(-0300) 2020-05-07
+  Scenarios launched:  1381
+  Scenarios completed: 1381
+  Requests completed:  1381
+  Mean response/sec: 4.58
+  Response time (msec):
+    min: 501.5
+    max: 567
+    median: 503
+    p95: 522.3
+    p99: 535.9
+  Scenario counts:
+    Heavy (/heavy): 1381 (100%)
+  Codes:
+    200: 1381
+
+--- python 4w HEAVY 4
+All virtual users finished
+Summary report @ 17:24:56(-0300) 2020-05-07
+  Scenarios launched:  2751
+  Scenarios completed: 2751
+  Requests completed:  2751
+  Mean response/sec: 9.12
+  Response time (msec):
+    min: 501.5
+    max: 879.8
+    median: 512.5
+    p95: 564.1
+    p99: 611.3
+  Scenario counts:
+    Heavy (/heavy): 2751 (100%)
+  Codes:
+    200: 2751
+
+--- python 4w HEAVY 5
+All virtual users finished
+Summary report @ 17:33:45(-0300) 2020-05-07
+  Scenarios launched:  11109
+  Scenarios completed: 8148
+  Requests completed:  8148
+  Mean response/sec: 34.45
+  Response time (msec):
+    min: 501.4
+    max: 22337
+    median: 6766.5
+    p95: 20071.5
+    p99: 21647.4
+  Scenario counts:
+    Heavy (/heavy): 11109 (100%)
+  Codes:
+    200: 8148
+  Errors:
+    ECONNRESET: 2961

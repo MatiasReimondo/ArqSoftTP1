@@ -1,0 +1,48 @@
+config:
+  environments:
+    node:
+      target: 'http://localhost:5555/node'
+      plugins:
+        statsd:
+          host: localhost
+          port: 8125
+          prefix: "artillery-node"
+    gunicorn:
+      target: 'http://localhost:5555/gunicorn'
+      plugins:
+        statsd:
+          host: localhost
+          port: 8125
+          prefix: "artillery-gunicorn"
+
+  pool: 50 # All HTTP requests from all virtual users will be sent over the same connections
+
+#Se supone endpoint heavy con 0.5 de LOOP
+#Este escenario es para multiple workers
+
+  phases:
+    - name: Plain0
+      duration: 60
+      arrivalRate: 4
+    - name: Ramp0
+      duration: 60
+      arrivalRate: 4
+      rampTo: 8
+    - name: Plain1
+      duration: 60
+      arrivalRate: 8
+    - name: Ramp1
+      duration: 60
+      arrivalRate: 8
+      rampTo: 16
+    - name: Plain2
+      duration: 60
+      arrivalRate: 16
+
+
+
+scenarios:
+  - name: Heavy (/heavy)
+    flow:
+      - get:
+          url: '/heavy'
