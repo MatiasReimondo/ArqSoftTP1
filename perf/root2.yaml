@@ -1,14 +1,14 @@
 config:
   environments:
-    node:
-      target: 'http://localhost:5555/node'
+    first:
+      target: 'http://localhost:5555/first/'
       plugins:
         statsd:
           host: localhost
           port: 8125
           prefix: "artillery-node"
-    gunicorn:
-      target: 'http://localhost:5555/gunicorn'
+    second:
+      target: 'http://localhost:5555/second/'
       plugins:
         statsd:
           host: localhost
@@ -17,37 +17,24 @@ config:
 
   pool: 50 # All HTTP requests from all virtual users will be sent over the same connections
 
-#Endpoint timeout 5 seg
-#Deberia tirar todo
-
+  #Se asume 0.5 de LOOP
+  #El endpoint deberia aguantarse esta demanda
   phases:
-    - name: Ramp
-      duration: 60
-      arrivalRate: 1
-      rampTo: 4
-    - name: Plain
+    - name: Plain0
       duration: 60
       arrivalRate: 4
-    - name: Ramp 2
+    - name: Ramp
       duration: 60
       arrivalRate: 4
       rampTo: 8
-    - name: Plain 2
+    - name: Plain
       duration: 60
       arrivalRate: 8
-    - name: Ramp 3
-      duration: 60
-      arrivalRate: 8
-      rampTo: 16
-    - name: Plain 3
-      duration: 60
-      arrivalRate: 16
-
 
 
 
 scenarios:
-  - name: Heavy (/heavy)
+  - name: Root
     flow:
       - get:
-          url: '/heavy'
+          url: '/'

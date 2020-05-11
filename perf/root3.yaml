@@ -1,14 +1,14 @@
 config:
   environments:
-    node:
-      target: 'http://localhost:5555/node'
+    first:
+      target: 'http://localhost:5555/first/'
       plugins:
         statsd:
           host: localhost
           port: 8125
           prefix: "artillery-node"
-    gunicorn:
-      target: 'http://localhost:5555/gunicorn'
+    second:
+      target: 'http://localhost:5555/second/'
       plugins:
         statsd:
           host: localhost
@@ -21,20 +21,13 @@ config:
   #El endpoint deberia aguantarse esta demanda
   phases:
     - name: Plain0
-      duration: 120
-      arrivalRate: 1
-    - name: Ramp
       duration: 60
-      arrivalRate: 1
-      rampTo: 2
-    - name: Plain
-      duration: 120
-      arrivalRate: 2
+      arrivalRate: 100
 
 
 
 scenarios:
-  - name: Heavy (/heavy)
+  - name: Root
     flow:
       - get:
-          url: '/heavy'
+          url: '/'
