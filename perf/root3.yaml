@@ -22,7 +22,21 @@ config:
   phases:
     - name: Plain0
       duration: 60
-      arrivalRate: 100
+      arrivalRate: 8
+    - name: Ramp
+      duration: 60
+      arrivalRate: 8
+      rampTo: 12
+    - name: Plain1
+      duration: 60
+      arrivalRate: 12
+    - name: Ramp1
+      duration: 60
+      arrivalRate: 12
+      rampTo: 16
+    - name: Plain2
+      duration: 60
+      arrivalRate: 16
 
 
 
