@@ -1,0 +1,65 @@
+
+> perf@1.0.0 artillery /home/tito/Desktop/fiuba/arq/repotp/perf
+> artillery "run" "timeout3.yaml" "-e" "gunicorn"
+
+Started phase 0 (Plain0), duration: 60s @ 01:57:24(-0300) 2020-05-11
+Report @ 01:57:34(-0300) 2020-05-11
+Elapsed time: 48 seconds
+  Scenarios launched:  196
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 20.23
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNREFUSED: 196
+
+Report @ 01:57:44(-0300) 2020-05-11
+Elapsed time: 58 seconds
+  Scenarios launched:  200
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 19.92
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNREFUSED: 197
+
+Report @ 01:57:54(-0300) 2020-05-11
+Elapsed time: 1 minute, 8 seconds
+  Scenarios launched:  201
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 20.26
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNREFUSED: 203
+
+Report @ 01:58:04(-0300) 2020-05-11
+Elapsed time: 1 minute, 18 seconds
+  Scenarios launched:  200
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 20.06
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNREFUSED: 200
+

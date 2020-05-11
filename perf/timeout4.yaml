@@ -17,37 +17,20 @@ config:
 
   pool: 50 # All HTTP requests from all virtual users will be sent over the same connections
 
-#Endpoint timeout 5 seg
-#Deberia tirar todo
 
   phases:
-    - name: Ramp
-      duration: 60
-      arrivalRate: 1
-      rampTo: 4
-    - name: Plain
-      duration: 60
-      arrivalRate: 4
-    - name: Ramp 2
-      duration: 60
-      arrivalRate: 4
-      rampTo: 8
-    - name: Plain 2
-      duration: 60
-      arrivalRate: 8
-    - name: Ramp 3
-      duration: 60
-      arrivalRate: 8
-      rampTo: 16
-    - name: Plain 3
-      duration: 60
-      arrivalRate: 16
+
+    - name: Ramp0
+      duration: 180
+      arrivalRate: 20
+      rampTo: 1000
+
 
 
 
 
 scenarios:
-  - name: Heavy (/timeout)
+  - name: timeout (/timeout)
     flow:
       - get:
           url: '/timeout'

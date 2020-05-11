@@ -1,0 +1,210 @@
+
+> perf@1.0.0 artillery /home/tito/Desktop/fiuba/arq/repotp/perf
+> artillery "run" "timeout4.yaml" "-e" "gunicorn"
+
+Started phase 0 (Ramp0), duration: 180s @ 01:40:12(-0300) 2020-05-11
+Report @ 01:40:22(-0300) 2020-05-11
+Elapsed time: 10 seconds
+  Scenarios launched:  260
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 26.62
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+
+Report @ 01:40:32(-0300) 2020-05-11
+Elapsed time: 20 seconds
+  Scenarios launched:  413
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 41.38
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNRESET: 160
+
+Report @ 01:40:42(-0300) 2020-05-11
+Elapsed time: 30 seconds
+  Scenarios launched:  564
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 56.56
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNRESET: 566
+
+Report @ 01:40:52(-0300) 2020-05-11
+Elapsed time: 40 seconds
+  Scenarios launched:  636
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 63.56
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNRESET: 635
+
+Report @ 01:41:02(-0300) 2020-05-11
+Elapsed time: 50 seconds
+  Scenarios launched:  815
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 81.6
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNRESET: 816
+
+Report @ 01:41:12(-0300) 2020-05-11
+Elapsed time: 1 minute, 0 seconds
+  Scenarios launched:  976
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 97.7
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNRESET: 975
+
+Report @ 01:41:22(-0300) 2020-05-11
+Elapsed time: 1 minute, 10 seconds
+  Scenarios launched:  998
+  Scenarios completed: 220
+  Requests completed:  220
+  Mean response/sec: 99.8
+  Response time (msec):
+    min: 59998.6
+    max: 63036.6
+    median: 60003.6
+    p95: 60014.2
+    p99: 61019.2
+  Codes:
+    504: 220
+  Errors:
+    ECONNRESET: 778
+
+Report @ 01:41:32(-0300) 2020-05-11
+Elapsed time: 1 minute, 20 seconds
+  Scenarios launched:  1071
+  Scenarios completed: 235
+  Requests completed:  235
+  Mean response/sec: 107.1
+  Response time (msec):
+    min: 59998.7
+    max: 67292.7
+    median: 60004.6
+    p95: 63051.6
+    p99: 67270
+  Codes:
+    504: 235
+  Errors:
+    ECONNRESET: 836
+
+Report @ 01:41:42(-0300) 2020-05-11
+Elapsed time: 1 minute, 30 seconds
+  Scenarios launched:  1120
+  Scenarios completed: 22
+  Requests completed:  22
+  Mean response/sec: 112.55
+  Response time (msec):
+    min: 67118.6
+    max: 75493.3
+    median: 75297
+    p95: 75484.5
+    p99: 75493.3
+  Codes:
+    504: 22
+  Errors:
+    ECONNRESET: 1098
+
+Report @ 01:41:52(-0300) 2020-05-11
+Elapsed time: 1 minute, 40 seconds
+  Scenarios launched:  1190
+  Scenarios completed: 15
+  Requests completed:  15
+  Mean response/sec: 119.02
+  Response time (msec):
+    min: 75289.7
+    max: 91539.2
+    median: 75457.6
+    p95: 91538.4
+    p99: 91539.2
+  Codes:
+    504: 15
+  Errors:
+    ECONNRESET: 1175
+
+Report @ 01:42:02(-0300) 2020-05-11
+Elapsed time: 1 minute, 50 seconds
+  Scenarios launched:  1125
+  Scenarios completed: 19
+  Requests completed:  19
+  Mean response/sec: 112.4
+  Response time (msec):
+    min: 91387.9
+    max: 91638.3
+    median: 91478.5
+    p95: 91633.6
+    p99: 91638.3
+  Codes:
+    504: 19
+  Errors:
+    ECONNRESET: 1104
+
+Report @ 01:42:12(-0300) 2020-05-11
+Elapsed time: 2 minutes, 0 seconds
+  Scenarios launched:  1310
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 131.33
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNRESET: 1313
+
+Report @ 01:42:22(-0300) 2020-05-11
+Elapsed time: 2 minutes, 10 seconds
+  Scenarios launched:  1213
+  Scenarios completed: 215
+  Requests completed:  215
+  Mean response/sec: 121.3
+  Response time (msec):
+    min: 59999.3
+    max: 63046.4
+    median: 60009
+    p95: 60036
+    p99: 63034.8
+  Codes:
+    504: 215
+  Errors:
+    ECONNRESET: 996
+
